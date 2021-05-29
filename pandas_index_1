@@ -1,0 +1,11 @@
+import pandas
+
+data=[{'name': 'alex', 'age': 30}, {'name': 'manny', 'age': 32}, {'name': 'mike', 'age': 29}]
+df=pandas.DataFrame(data)
+# sort data frame
+df.sort_values('age',inplace=True)
+# drop index after sort
+df.reset_index(drop=True,inplace=True)
+# start index at 1 
+df.index+=1
+print(df)
