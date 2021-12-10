@@ -1,0 +1,7 @@
+name:
+  app:
+    name: apple
+    image: "busybox"
+ports:
+  external: 30000
+replicas: 2
